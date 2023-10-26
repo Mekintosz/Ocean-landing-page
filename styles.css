@@ -1,3 +1,8 @@
-font-family: 'Cinzel', serif;
+/* font-family: 'Cinzel', serif;
 font-family: 'Crimson Pro', serif;
-font-family: 'Oxygen', sans-serif;
+font-family: 'Oxygen', sans-serif; */
+
+.icon {
+    width: 150px;
+    color: white;
+}

@@ -10,24 +10,37 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="row">
-        <span class="logo">Ocean</span>
-        <div class="menu"><ul>
-            <li class="menu-item">Home</li>
-            <li class="menu-item">Our Promise</li>
-            <li class="menu-item">About</li>
-            <li class="menu-item">Contact</li>
-        </ul></div>
-    </nav>
+    <header>
+        <div class="container navigation">
+            <div class="nav-top">
+                <span class="logo">Ocean</span>
+                <button class="nav-toggle" aria-label="open navigation">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            <nav class="row ">
+                <div class="menu">
+                    <ul>
+                        <li class="menu-item">Home</li>
+                        <li class="menu-item">Our Promise</li>
+                        <li class="menu-item">About</li>
+                        <li class="menu-item">Contact</li>
+                     </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
     <section>
         <div class="container row">
             <div class="home-left">
                 <h1 class="heading">This site is about majestic ocean</h1>
                 <p>The ocean (also known as the sea or the world ocean) is a body of salt water that covers approximately 70.8% of the Earth and contains 97% of Earth's water.</p>
-                <button class="button"><a href=""></a></button>
+                <button class="button"><a href=""></a>Contact</button>
             </div>
             <div class="home-right">
-                <picture></picture>
+                <picture>
+                    <img src="assets/nurek1-w550.jpg" alt="">
+                </picture>
             </div>
         </div>
 
@@ -35,22 +48,21 @@
     <section>
         <div class="container">
             <div class="badge">
-                <img src="assets/devices.svg" alt="outline of a laptop and a mobile phone" class="icon">
-                    <h2>Responsive</h2>
-                    <p class="badge-text">Designed for all sizes of device. From mobile phones to large desktops</p>
-                </img>
+                <img src="assets/devices.svg" alt="outline of a laptop and a mobile phone" class="icon"></img>
+                <h2>Responsive</h2>
+                <p class="badge-text">Designed for all sizes of device. From mobile phones to large desktops</p>
+                
             </div>
             <div class="badge">
-                <img src="assets/electric_bolt.svg" alt="outline of an electric bolt" class="icon">
-                    <h2>Eficient</h2>
-                    <p class="badge-text">Super efficient works smooth and is reliable. Very easy to use.</p>
-                </img>
+                <img src="assets/electric_bolt.svg" alt="outline of an electric bolt" class="icon"></img>
+                <h2>Eficient</h2>
+                <p class="badge-text">Super efficient works smooth and is reliable. Very easy to use.</p>
             </div>
             <div class="badge">
-                <img src="assets/workspace_premium.svg" alt="outline of a medal and a podium" class="icon">
-                    <h2>Quality</h2>
-                    <p class="badge-text">Is of highest quality. Beautiful colors and ergonomic design</p>
-                </img>
+                <img src="assets/workspace_premium.svg" alt="outline of a medal and a podium" class="icon"></img>
+                <h2>Quality</h2>
+                <p class="badge-text">Is of highest quality. Beautiful colors and ergonomic design</p>
+                
             </div>
         </div>
     </section>
@@ -59,7 +71,9 @@
             <article>
                 <h2>First app at high depth</h2>
                 <p>The contemporary concept of the World Ocean was coined in the early 20th century by the Russian oceanographer Yuly Shokalsky to refer to the continuous ocean that covers and encircles most of the Earth.[24][25] The global, interconnected body of salt water is sometimes referred to as the World Ocean, global ocean or the great ocean.[26][27][28] The concept of a continuous body of water with relatively unrestricted exchange between its components is critical in oceanography.[29]</p>
-                <picture></picture>
+                <picture>
+                    <img src="assets/nurek2-w700.jpg" alt="A diver in blue ocean, coral reef in the foreground and mountains in the background">
+                </picture>
                 <p>As the world's ocean is the principal component of Earth's hydrosphere, it is integral to life on Earth, forms part of the carbon cycle and water cycle, and – as a huge heat reservoir – influences climate and weather patterns.</p>
             </article>
             <div class="squares-collumn">
@@ -78,25 +92,58 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="background">
+                <h2 class="title">Pleas get in touch we look forward to hearing from you</h2>
+                    <form action="">
+                        <div class="form-left-section">
+                            <label for="first-name">First name</label>
+                            <input type="text" name="first-name">
+                            <label for="last-name">Last name</label>
+                            <input type="text" name="last-name">
+                            <label for="email">Email</label>
+                            <input type="text" name="email">
+                            <label for="phone-number">Phone number</label>
+                            <input type="text" name="phone-number">
+                        </div>
+                        <div class="form-right-section">
+                            <label for="company">Company</label>
+                            <input type="text" name="company">
+                            <label for="message">Message</label>
+                            <input type="text" name="message">
+                        </div>
+                        <button type="submit" id="submit">Submit</button>
+                    </form>
+            </div>
+        </div>
+    </section>
     <footer>
         <div class="container">
             <span></span>
             <div class="footer-content"></div>
             <div>
-                <h3></h3>
-                <p></p>
+                <h3>If you like what I do</h3>
+                <p>Please do not hesitate to contact me. Our mutual co-operation will benefit both of us and change the world for better. Give me a call, send an email or fill up the contact form nad I will get back as soon as possible.</p>
             </div>
             <div>
-                <h3></h3>
-                <p></p>
+                <h3>Navigation</h3>
+                <ul>
+                    <li class="menu-item">Home</li>
+                    <li class="menu-item">Our Promise</li>
+                    <li class="menu-item">About</li>
+                    <li class="menu-item">Contact</li>
+                 </ul>
             </div>
             <div>
-                <h3></h3>
-                <p></p>
+                <h3>Tech stack</h3>
+                <p>HTML, CSS,  Javascript, Github, Jest, Reasct, NodeJS, Webpack, </p>
             </div>
             <div>
-                <h3></h3>
-                <p></p>
+                <h3>Contact details</h3>
+                <p>Contact form
+                    mike.lazurus@gmail.com
+                    +48 75638394756</p>
             </div>
         </div>
     </footer>

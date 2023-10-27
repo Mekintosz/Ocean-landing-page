@@ -1,20 +1,48 @@
-/* 
-font-family: 'Crimson Pro', serif;
-font-family: 'Oxygen', sans-serif; */
-
 :root {
     --golden: #c3a144;
-    --bluegreen: #005a66;
+    --blue-green: #005a66;
     --navy: #1a354b;
-    --whiteblue: #e7f5ff;
+    --white-blue: #e7f5ff;
+    --oxygen: 'Oxygen', sans-serif;
 }
 
 *, *::before, *::after {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
     margin: 0;
+    font-family: 'Crimson Pro', serif;
+    font-size: 1.125rem;
+    color: var(--white-blue);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--oxygen)
+}
+
+h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: var(--golden);
+    margin-bottom: 1.6rem;
+}
+
+p {
+    margin-bottom: 1.6rem;
+}
+
+.button-golden {
+    display: flex;
+    margin: 3rem auto;
+    background-color: var(--golden);
+    color: var(--navy);
+    font-family: var(--oxygen);
+    font-size: 1.3125rem;
+    padding: 0.125em 2.2em;
+    border-radius: 2em;
 }
 
 .icon {
@@ -25,6 +53,12 @@ body {
 img {
     max-width: 100%;
 }
+
+.container {
+
+}
+
+
 
 header {
     background-color: var(--navy);
@@ -39,23 +73,25 @@ header {
 
 .nav-top {
     text-align: center;
+    padding: 1rem;
 }
+
 .logo {
     font-family: 'Cinzel', serif;
     font-size: 2rem;
-    margin: 0 auto;
 }
 
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    font-family: var(--oxygen);
     text-transform: uppercase;
 }
 
 .navigation {
     
-    color: var(--whiteblue);
+    color: var(--white-blue);
 }
 
 .nav-toggle {
@@ -65,7 +101,7 @@ ul {
     height: 3em;
     padding: 0em;
     border-radius: 50%;
-    background: #072A2D;
+    background: var(--blue-green);
     color: white;
     transition: opacity 250ms ease;
     
@@ -78,6 +114,28 @@ ul {
     opacity: .75;
 }
 
+.nav {
+    visibility: hidden;
+    height: 0;
+    padding: 1.2rem;
+    font-size: 1.125rem;
+    position: absolute;
+    text-align: center;
+}
+
+.nav--visible {
+    visibility: visible;
+    height: auto;
+    position: relative;
+}
+
+.menu-item {
+    padding: 0.5rem;
+}
+
+
+
+/* -------------------Nav toggle button (hamburger)--------------------------- */
 .hamburger {
     width: 50%;
     position: relative;
@@ -89,7 +147,7 @@ ul {
     display: block;
     margin: 0 auto;
     height: 3px;
-    background: white;
+    background: var(--white-blue);
 }
 
 .hamburger::before,
@@ -105,3 +163,26 @@ ul {
 .hamburger::after {
     transform: translateY(3px);
 }
+
+.hero {
+    padding: 2rem 0;
+    background-color: var(--navy);
+}
+
+
+
+
+
+@media (min-width: 600px) {
+    
+    .row {
+        display: flex;
+    }
+    
+    .home-left {
+        max-width: 550px;
+        width: 50%;
+    }
+    
+}
+

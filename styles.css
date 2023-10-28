@@ -4,6 +4,8 @@
     --navy: #1a354b;
     --white-blue: #e7f5ff;
     --oxygen: 'Oxygen', sans-serif;
+    --crimson: 'Crimson Pro', serif;
+    --cinzel: 'Cinzel', serif;
 }
 
 *, *::before, *::after {
@@ -19,16 +21,23 @@ body {
     color: var(--white-blue);
 }
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 h1, h2, h3, h4 {
     font-family: var(--oxygen);
-    padding-bottom: 1em;
+    padding-bottom: 1.2em;
 }
 
 h1 {
     font-size: 2.2rem;
     letter-spacing: 1px;
     color: var(--golden);
-    margin-bottom: 1.6rem;
+    /* margin-bottom: 1.3rem; */
 }
 
 h3 {
@@ -55,12 +64,6 @@ h3 {
 img {
     max-width: 100%;
 }
-
-.container {
-
-}
-
-
 
 header {
     background-color: var(--navy);
@@ -92,7 +95,6 @@ ul {
 }
 
 .navigation {
-    
     color: var(--white-blue);
 }
 
@@ -261,7 +263,30 @@ form {
 
 footer {
     background-color: var(--navy);
+    padding: 4rem 0;
 }
+
+footer p {
+    margin-bottom: 1.2rem;
+}
+
+.footer-nav {
+    text-transform: none;
+    font-family: var(--crimson);
+    margin-bottom: 1.2rem;
+}
+
+.finish-line {
+    font-family: var(--cinzel);
+    font-size: 1rem;
+    color: var(--golden);
+}
+
+/* .title {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    color: var(--golden);
+} */
 
 
 @media (min-width: 600px) {

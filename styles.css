@@ -20,7 +20,8 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: var(--oxygen)
+    font-family: var(--oxygen);
+    padding-bottom: 1em;
 }
 
 h1 {
@@ -30,8 +31,8 @@ h1 {
     margin-bottom: 1.6rem;
 }
 
-p {
-    margin-bottom: 1.6rem;
+h3 {
+    padding-bottom: 1rem;
 }
 
 .button-golden {
@@ -46,8 +47,9 @@ p {
 }
 
 .icon {
-    width: 150px;
+    width: 130px;
     color: white;
+    padding-bottom: 1rem;
 }
 
 img {
@@ -164,13 +166,74 @@ ul {
     transform: translateY(3px);
 }
 
+/* ---------------------------Hero section------------------------- */
+
 .hero {
-    padding: 2rem 0;
+    padding: 2rem 0 4rem;
     background-color: var(--navy);
 }
 
+/* -----------------------Our promise section---------------------------- */
 
+.our-promise {
+    color: var(--white-blue);
+    background-color: var(--blue-green);
+    text-align: center;
+    padding: 4rem 0;
+}
 
+.badge>h2 {
+    padding-bottom: 1rem;
+}
+
+.badge {
+    max-width: 235px;
+    margin: 0 auto;
+}
+
+.badges div:nth-child(-n + 2) {
+    padding-bottom: 3rem;
+}
+
+/* -------------------- About us section----------------- */
+
+.about-us-section {
+    background: linear-gradient(125deg, #C0D4DA 4.01%, #94D0D0 100%);
+    padding: 4rem 0 4rem;
+}
+
+.about-us {
+    color: var(--navy);
+}
+
+.about-us p {
+    margin: 1em 0;
+}
+
+.square {
+    background-color: var(--navy);
+    text-align: center;
+    padding: 1.4em;
+    border-radius: 5px;
+}
+
+.squares-collumn div:nth-child(-n + 2) {
+    margin-bottom: 3rem;
+}
+
+/* --------------------contact form------------------------ */
+
+.contact-form {
+    background-image: url(assets/bg-form.png);
+    background-color: var(--blue-green);
+    background-size: cover;
+}
+
+/* ----------------------------Footer--------------------- */
+
+footer {
+    background-color: var(--navy);
+}
 
 
 @media (min-width: 600px) {

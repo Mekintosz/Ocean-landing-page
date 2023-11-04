@@ -37,6 +37,7 @@ h1 {
     font-size: 2.2rem;
     letter-spacing: 1px;
     color: var(--golden);
+    padding-bottom: 2.2rem;
     /* margin-bottom: 1.3rem; */
 }
 
@@ -176,7 +177,7 @@ ul {
 /* ---------------------------Hero section------------------------- */
 
 .hero {
-    padding: 2rem 0 4rem;
+    padding: 4rem 0 6rem;
     background-color: var(--navy);
 }
 
@@ -195,7 +196,7 @@ ul {
     color: var(--white-blue);
     background-color: var(--blue-green);
     text-align: center;
-    padding: 4rem 0;
+    padding: 6rem 0;
 }
 
 .badge {
@@ -211,7 +212,7 @@ ul {
 
 .about-us-section {
     background: linear-gradient(125deg, #C0D4DA 4.01%, #94D0D0 100%);
-    padding: 4rem 0 4rem;
+    padding: 6rem 0;
 }
 
 .about-us {
@@ -249,7 +250,7 @@ ul {
     background-image: url(assets/bg-form.png);
     background-color: var(--blue-green);
     background-size: cover;
-    padding: 4rem 0;
+    padding: 6rem 0;
 }
 
 form {
@@ -265,7 +266,7 @@ form {
 
 form h2 {
     margin: 2rem auto 0;
-    max-width: 90%;
+    max-width: 80%;
     text-align: center;
     color: var(--golden);
     
@@ -275,7 +276,7 @@ form h2 {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
-    width: 90%;
+    width: 80%;
     max-width: 400px;
     margin: 0 auto 1.2rem;
 }
@@ -435,4 +436,27 @@ footer h4 {
 
     .form-right-section>.form-field {
         margin: 0 auto 1.8rem 2rem;
+    }
+
+    h1 {
+        font-size: 2.6rem;
+        padding-bottom: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+        padding-bottom: 2.6rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .hero, .our-promise,.about-us-section, .contact-form {
+        padding: 8rem 0;
+    }
+
+    form h2 {
+        max-width: 70%;
+    }
 }

@@ -64,7 +64,6 @@ h2 {
 .icon {
     width: 130px;
     color: white;
-    padding-bottom: 1rem;
 }
 
 img {
@@ -205,7 +204,7 @@ ul {
 }
 
 .badges div:nth-child(-n + 2) {
-    padding-bottom: 3rem;
+    padding-bottom: 4.5rem;
 }
 
 /* -------------------- About us section----------------- */
@@ -290,7 +289,7 @@ input {
 }
 
 textarea {
-    height: 11.4125rem;
+    height: 12.8rem;
 }
 
 /* .form-left-section, .form-right-section {
@@ -370,6 +369,14 @@ footer h4 {
         justify-content: space-between;
     }
 
+    .container-badges {
+        justify-content: space-between;
+    }
+
+    .badges div:nth-child(-n + 2) {
+        padding-bottom: 0;
+    }
+
     .about-us {
         max-width: 50%;
     }
@@ -421,4 +428,11 @@ footer h4 {
     .about-us {
         max-width: 60%;
     }
+
+    .form-left-section>.form-field {
+        margin: 0 2rem 1.8rem auto;
+    }
+
+    .form-right-section>.form-field {
+        margin: 0 auto 1.8rem 2rem;
 }

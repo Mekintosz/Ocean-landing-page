@@ -12,7 +12,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <div class="container navigation row">
             <div class="nav-top">
                 <span class="logo">Ocean</span>
@@ -22,20 +22,20 @@
             </div>
             <nav class="nav">
                 <ul class="nav__list">    
-                    <li class="menu-item">Home</li>
-                    <li class="menu-item">Our Promise</li>
-                    <li class="menu-item">About</li>
-                    <li class="menu-item">Contact</li>
+                    <li class="menu-item"><a href="#hero">Home</a></li>
+                    <li class="menu-item"><a href="#our-promise">Our Promise</a></li>
+                    <li class="menu-item"><a href="#about-us-section">About</a></li>
+                    <li class="menu-item"><a href="#contact-form">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="hero">
-        <div class="container row">
+    <section class="hero" id="hero">
+        <div class="container row hero-container">
             <div class="home-left">
                 <h1 class="heading">This site is about majestic ocean</h1>
-                <p>The ocean (also known as the sea or the world ocean) is a body of salt water that covers approximately 70.8% of the Earth and contains 97% of Earth's water.</p>
-                <button class="button-golden"><a href=""></a>Contact</button>
+                <p>The ocean is a body of salt water that covers approximately 70.8% of the Earth and contains 97% of Earth's water. The exposed land occupies the remaining 29 percent of the planetary surface and has a mean elevation of about 840 metres. All the elevated land could be hidden under the oceans and Earth reduced to a smooth sphere that would be completely covered by a continuous layer of seawater more than 2,600 metres deep.</p>
+                <a href="#contact-form"><button class="button-golden hero-button">Contact us</button></a>
             </div>
             <div class="home-right">
                 <picture>
@@ -43,9 +43,8 @@
                 </picture>
             </div>
         </div>
-
     </section>
-    <section class="our-promise">
+    <section class="our-promise" id="our-promise">
         <div class="container badges row">
             <div class="badge">
                 <img src="assets/devices.svg" alt="outline of a laptop and a mobile phone" class="icon"></img>
@@ -66,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="about-us-section">
+    <section class="about-us-section" id="about-us-section">
         <div class="container row">
             <article class="about-us">
                 <h2>First app at high depth makes ocean's sound.</h2>
@@ -92,7 +91,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-form">
+    <section class="contact-form" id="contact-form">
         <div class="container">
             <div class="background">
                     <form action="">
@@ -100,30 +99,30 @@
                             <div class="form-container">
                                 <div class="form-left-section">
                                     <div class="form-field">
-                                        <label for="first-name">First name</label>
-                                        <input type="text" name="first-name">
+                                        <label for="first-name">First name*</label>
+                                        <input type="text" minlength="3" required>
                                     </div>
                                     <div class="form-field">
                                         <label for="last-name">Last name</label>
-                                        <input type="text" name="last-name">
+                                        <input type="text">
                                     </div>
                                     <div class="form-field">
-                                        <label for="email">Email</label>
-                                        <input type="text" name="email">
+                                        <label for="email">Email*</label>
+                                        <input type="email" required>
                                     </div>
                                     <div class="form-field">
                                         <label for="phone-number">Phone number</label>
-                                        <input type="text" name="phone-number">
+                                        <input type="text">
                                     </div>
                                 </div>
                                 <div class="form-right-section">
                                     <div class="form-field">
                                         <label for="company">Company</label>
-                                        <input type="text" name="company">
+                                        <input type="text">
                                     </div>
                                     <div class="form-field">
-                                        <label for="message">Message</label>
-                                        <textarea name="message" id="" cols="30" rows="10"></textarea>
+                                        <label for="message">Message*</label>
+                                        <textarea id="" cols="30" rows="11" minlength="32" placeholder="Please could we work on a project..." spellcheck="true" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -136,7 +135,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-head">
-                    <h3>If you like what I do</h3>
+                    <h2>If you like what we do</h2>
                     <p>Please do not hesitate to contact me. Our mutual co-operation will benefit both of us and change the world for better. Give me a call, send an email or fill up the contact form nad I will get back as soon as possible.</p>
                 </div>
                 <div class="footer-mini">
@@ -149,10 +148,10 @@
                     <div class="foote-mini-column">
                         <h4>Navigation</h4>
                         <ul class="footer-nav">
-                            <li class="menu-item-nav">Home</li>
-                            <li class="menu-item-nav">Our Promise</li>
-                            <li class="menu-item-nav">About</li>
-                            <li class="menu-item-nav">Contact</li>
+                            <li class="menu-item"><a href="#hero">Home</a></li>
+                            <li class="menu-item"><a href="#our-promise">Our Promise</a></li>
+                            <li class="menu-item"><a href="#about-us-section">About</a></li>
+                            <li class="menu-item"><a href="#contact-form">Contact</a></li>
                         </ul>
                     </div>
                     <div class="foote-mini-column">
@@ -160,7 +159,7 @@
                         <p>HTML, CSS, Javascript, Github, Jest, Webpack, VScode, Bash</p>
                     </div>
                 </div>
-                <span class="finish-line">Ocean @ 2023</span>
+                <div class="finish-line"><a style="color: inherit;" href="#header">Ocean @ 2023</a></div>
             </div>    
         </div>
     </footer>

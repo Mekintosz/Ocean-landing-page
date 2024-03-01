@@ -38,7 +38,6 @@ h1 {
     letter-spacing: 1px;
     color: var(--golden);
     padding-bottom: 2.2rem;
-    /* margin-bottom: 1.3rem; */
 }
 
 h2 {
@@ -62,14 +61,27 @@ h2 {
     opacity: .75; 
 }
 
+.hero-button {
+    margin: 3rem auto;
+}
+
 .icon {
     width: 130px;
-    color: white;
+    color: var(--white-blue);
 }
 
 img {
     max-width: 100%;
 }
+
+a {
+    text-decoration: none;
+    color: var(--white-blue);
+  }
+
+a:hover {
+    color: lightblue;
+  }
 
 header {
     background-color: var(--navy);
@@ -114,7 +126,6 @@ ul {
     background: var(--blue-green);
     color: white;
     transition: opacity 250ms ease;
-    
     position: absolute;
     left: 0;
 }
@@ -144,8 +155,8 @@ ul {
 }
 
 
-
 /* -------------------Nav toggle button (hamburger)--------------------------- */
+
 .hamburger {
     width: 50%;
     position: relative;
@@ -180,6 +191,12 @@ ul {
     padding: 4rem 0 6rem;
     background-color: var(--navy);
 }
+
+/* .home-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
 
 .home-right {
     display: flex;
@@ -254,7 +271,6 @@ ul {
 }
 
 form {
-    /* width: 100%; */
     max-width: 1100px;
     background-color:rgb(26, 53, 75, 0.65);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -293,9 +309,26 @@ textarea {
     height: 12.8rem;
 }
 
-/* .form-left-section, .form-right-section {
-    opacity: 100%;
-} */
+input:hover {
+    background-color: lightblue;
+  }
+
+  input:focus {
+    background-color: lightblue;
+  }
+
+input:invalid:required {
+    border-color: #ad4753
+  }
+
+input:valid {
+    border-color: #0075c9;
+  }
+
+  textarea:invalid:required {
+    border-color: #ad4753
+  }
+
 /* ----------------------------Footer--------------------- */
 
 footer {
@@ -321,7 +354,7 @@ footer h4 {
     font-family: var(--cinzel);
     font-size: 1rem;
     color: var(--golden);
-    margin-top: 4rem;
+    margin-top: 6rem;
     display: flex;
     justify-content: center;
 }
@@ -333,12 +366,20 @@ footer h4 {
         display: flex;
         gap: 2rem;
     }
-    
+
+    /* .hero-container {
+        display: block;
+    } */
+
     .home-left {
         max-width: 550px;
         width: 50%;
     }
 
+    .home-right {
+        max-width: 50%;
+    } 
+    
     .nav-toggle {
         display: none;
     }
@@ -383,9 +424,9 @@ footer h4 {
     }
 
     .squares-collumn div:nth-child(-n+2) {
-        margin-bottom: 0;
-        
+        margin-bottom: 0;  
     }
+
     .squares-collumn {
         margin: 0 0 0 auto;
         display: flex;
@@ -420,7 +461,11 @@ footer h4 {
         gap: 5rem;
     }
 
-    .hero, .our-promise, .about-us-section, .contact-form, footer {
+    .hero, .our-promise, .about-us-section, .contact-form {
+        padding: 6rem 0;
+    }
+
+    footer {
         padding: 6rem 0;
     }
 }

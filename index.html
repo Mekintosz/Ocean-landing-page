@@ -75,7 +75,7 @@
                 </picture>
                 <p>As the world's ocean is the principal component of Earth's hydrosphere, it is integral to life on Earth, forms part of the carbon cycle and water cycle, and – as a huge heat reservoir – influences climate and weather patterns.</p>
             </article>
-            <div class="squares-collumn">
+            <div class="squares-column">
                 <div class="square">
                     <h3>What we fish at night</h3>
                     <p>The ocean is a huge body of saltwater that covers about 71 percent of Earth’s surface. </p>
@@ -91,42 +91,42 @@
             </div>
         </div>
     </section>
-    <section class="contact-form" id="contact-form">
+    <section class="contact-form">
         <div class="container">
             <div class="background">
-                    <form action="">
+                    <form action="" id="contact-form">
                         <h2 class="title">Please get in touch we look forward to hearing from you</h2>
                             <div class="form-container">
                                 <div class="form-left-section">
                                     <div class="form-field">
                                         <label for="first-name">First name*</label>
-                                        <input type="text" minlength="3" required>
+                                        <input id="first-name" type="text" name="contact-form" autocomplete="name" minlength="3" required>
                                     </div>
                                     <div class="form-field">
                                         <label for="last-name">Last name</label>
-                                        <input type="text">
+                                        <input id="last-name" type="text" autocomplete="family-name">
                                     </div>
                                     <div class="form-field">
                                         <label for="email">Email*</label>
-                                        <input type="email" required>
+                                        <input id="email" type="email" autocomplete="email" required>
                                     </div>
                                     <div class="form-field">
                                         <label for="phone-number">Phone number</label>
-                                        <input type="text">
+                                        <input  id="phone-number" type="text" >
                                     </div>
                                 </div>
                                 <div class="form-right-section">
                                     <div class="form-field">
-                                        <label for="company">Company</label>
-                                        <input type="text">
+                                        <label for="company">Organization</label>
+                                        <input type="text" id="organization" autocomplete="organization">
                                     </div>
                                     <div class="form-field">
                                         <label for="message">Message*</label>
-                                        <textarea id="" cols="30" rows="11" minlength="32" placeholder="Please could we work on a project..." spellcheck="true" required></textarea>
+                                        <textarea id="message" cols="30" rows="11" minlength="32" placeholder="Please leave your message here, we will get in touch as soon as we can." spellcheck="true" required></textarea>
                                     </div>
                                 </div>
                             </div>
-                        <button class="button-golden" type="submit" id="submit">Submit</button>
+                        <button class="button-golden" type="submit" name="contact-form">Submit</button>
                     </form>
             </div>
         </div>

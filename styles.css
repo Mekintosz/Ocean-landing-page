@@ -367,10 +367,6 @@ footer h4 {
         gap: 2rem;
     }
 
-    /* .hero-container {
-        display: block;
-    } */
-
     .home-left {
         max-width: 550px;
         width: 50%;
@@ -423,11 +419,11 @@ footer h4 {
         max-width: 50%;
     }
 
-    .squares-collumn div:nth-child(-n+2) {
+    .squares-column div:nth-child(-n+2) {
         margin-bottom: 0;  
     }
 
-    .squares-collumn {
+    .squares-column {
         margin: 0 0 0 auto;
         display: flex;
         flex-direction: column;

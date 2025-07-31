@@ -1,6 +1,6 @@
 # OCEAN / HTML + CSS + JavaScript
 
-# Responsive to all devices landing page with contact form
+Responsive to all devices landing page with contact form
 
 https://mekintosz.github.io/landing-page-02/
 

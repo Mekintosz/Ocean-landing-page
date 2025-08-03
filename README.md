@@ -2,7 +2,7 @@
 
 Responsive to all devices landing page with contact form
 
-https://mekintosz.github.io/landing-page-02/
+https://mekintosz.github.io/Ocean-landing-page/
 
 A portal dedicated to all things about Ocean.
 
